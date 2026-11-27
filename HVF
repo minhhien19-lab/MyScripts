@@ -1,4 +1,4 @@
-local Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/NoahTyrant/Fluent-Ui/refs/heads/main/main.lua"))()
+local Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/minhhien19-lab/MyScripts/refs/heads/main/HVF%20fluent%20ui"))()
 pcall(function()
 	if Fluent and Fluent.GUI then
 		Fluent.GUI.DisplayOrder = 5000
@@ -7016,7 +7016,7 @@ end);
 	Tabs.Main:AddSlider("CastDelaySlider", {
 		Title = "Cast Delay Sec",
 		Default = Config.CastDelay or 1,
-		Min = 1,
+		Min = 0,
 		Max = 10,
 		Rounding = 1,
 		Callback = function(Value)
