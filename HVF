@@ -2800,7 +2800,7 @@ task.spawn(function()
 			end
 			if activeCast and not isMinigame then
 				local minCastInterval = (Config.AutoCastMethod == "Instant") and 0.05
-					or math.clamp(tonumber(Config.CastDelay) or 1, 0, 10)
+					or math.clamp(tonumber(Config.CastDelay) or 0, 0, 10)
 				if
 					(now - lastMinigameEndTick >= minCastInterval)
 					and (now - lastCastTry >= minCastInterval)
