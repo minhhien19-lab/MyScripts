@@ -37,7 +37,7 @@ local UpgradeCharacterEvent = Events:WaitForChild("UpgradeCharacter", 9e9)
 local Config = {
 	AutoCast = false,
 	AutoCastMethod = "Instant",
-	CastDelay = 0,
+	CastDelay = 1,
 	AutoReel = false,
 	AutoMiniGame = false,
 	BossMode = "Normal",
@@ -2800,7 +2800,7 @@ task.spawn(function()
 			end
 			if activeCast and not isMinigame then
 				local minCastInterval = (Config.AutoCastMethod == "Instant") and 0.05
-					or math.clamp(tonumber(Config.CastDelay) or 0, 0, 10)
+					or math.clamp(tonumber(Config.CastDelay) or 1, 0, 10)
 				if
 					(now - lastMinigameEndTick >= minCastInterval)
 					and (now - lastCastTry >= minCastInterval)
@@ -6842,7 +6842,7 @@ end);
 	end)
 
 	local Window = Fluent:CreateWindow({
-		Title = "Porn Hub",
+		Title = "StarCrow Hub",
 		SubTitle = " | Heavyweigh Fishing | 00:00:00",
 		TabWidth = 130,
 		Size = UDim2.fromOffset(460, 400),
