@@ -37,7 +37,7 @@ local UpgradeCharacterEvent = Events:WaitForChild("UpgradeCharacter", 9e9)
 local Config = {
 	AutoCast = false,
 	AutoCastMethod = "Instant",
-	CastDelay = 1,
+	CastDelay = 0,
 	AutoReel = false,
 	AutoMiniGame = false,
 	BossMode = "Normal",
@@ -6842,7 +6842,7 @@ end);
 	end)
 
 	local Window = Fluent:CreateWindow({
-		Title = "StarCrow Hub",
+		Title = "Porn Hub",
 		SubTitle = " | Heavyweigh Fishing | 00:00:00",
 		TabWidth = 130,
 		Size = UDim2.fromOffset(460, 400),
