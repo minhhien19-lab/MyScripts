@@ -1,4 +1,4 @@
-local Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/minhhien19-lab/MyScripts/refs/heads/main/HVF%20fluent%20ui"))()
+local Fluent = loadstring(game:HttpGet("https://raw.githubusercontent.com/NoahTyrant/Fluent-Ui/refs/heads/main/main.lua"))()
 pcall(function()
 	if Fluent and Fluent.GUI then
 		Fluent.GUI.DisplayOrder = 5000
@@ -337,7 +337,7 @@ local function SendDiscordWebhook(rawUrl, title, description, customColor, extra
 				color = customColor or 65280,
 				fields = fields,
 				footer = {
-					text = "Porn Hub",
+					text = "StarCrow Hub",
 				},
 				timestamp = DateTime.now():ToIsoDate(),
 			},
@@ -6847,7 +6847,7 @@ end);
 		TabWidth = 130,
 		Size = UDim2.fromOffset(460, 400),
 		Acrylic = false,
-		Theme = "Ocean",
+		Theme = "Amethyst",
 		MinimizeKey = Enum.KeyCode.LeftControl,
 	})
 	pcall(function()
@@ -9936,7 +9936,7 @@ if not getgenv().StarCrowQueuedRan then
     repeat task.wait(0.5) until workspace:FindFirstChild("Terrain") and (#workspace:GetChildren() > 10)
     repeat task.wait(0.5) until game:GetService("Players").LocalPlayer and (game:GetService("Players").LocalPlayer.Character or game:GetService("Players").LocalPlayer.CharacterAdded:Wait())
     task.wait(2)
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/minhhien19-lab/MyScripts/refs/heads/main/HVF"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NoahTyrant/StarCrow/refs/heads/main/Heavyweigh%20Fishing"))()
 end
 ]])
 				end)
